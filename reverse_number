@@ -1,0 +1,30 @@
+// java program to find reverse number
+import java.util.Scanner;
+class demo
+{
+    int num,s=0,r;
+    Scanner s1 = new Scanner(System.in);
+    void input()
+    {
+        System.out.println("Enter Number:-");
+        num=s1.nextInt();
+    }
+    void output()
+    {
+        while(num>0)
+        {
+            r=num%10;
+            s=s*10+r;
+            num=num/10;
+        }
+           System.out.println("revers number is:-"+s);
+    }
+    
+}
+class HelloWorld {
+    public static void main(String[] args) {
+        demo d=new demo();
+        d.input();
+        d.output();
+    }
+}
