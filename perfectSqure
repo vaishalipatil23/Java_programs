@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class demo
+{
+    int num;
+    Scanner s=new Scanner(System.in);
+    void get()
+    {
+    System.out.println("Enter number:-");
+    num=s.nextInt();
+    }
+void put()
+{
+    boolean flag = isPerfectSqure(num);
+    if(flag)
+    {
+        System.out.println(num+"is a perfect squre number");
+    }
+   else
+   {
+        System.out.println(num+"is  not a perfect squre number");
+       
+   }
+}
+static boolean isPerfectSqure(int num)
+{
+    double root =Math.sqrt(num);
+    if((Math.floor(root) -root)==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+}
+class HelloWorld {
+    public static void main(String[] args) {
+      demo d=new demo();
+      d.get();
+      d.put();
+    }
+}
