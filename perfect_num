@@ -1,0 +1,42 @@
+import java.util.Scanner;
+class demo10
+{
+	long n,sum=0;
+	Scanner s=new Scanner(System.in);
+  void get()
+  {
+	  System.out.println("Enter Number:-");
+	  n=s.nextLong();
+  }
+	  void put()
+	  {
+	    int i=1;
+	    while(i<=n/2)
+	    {
+			if(n%i==0)
+			{
+				sum=sum+i;
+		  }
+		  i++;
+			}
+	   if(sum==n)
+	   {
+		   System.out.println("Given Number is perfectnumber");
+		}
+		else
+		{
+			System.out.println("Given Number is not  perfectnumber");
+		}
+
+   }
+
+}
+class perfect_num
+{
+	public static void main(String args[])
+	{
+		demo10 d=new demo10();
+		d.get();
+		d.put();
+	}
+	}
